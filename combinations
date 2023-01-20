@@ -1,0 +1,8 @@
+from itertools import combinations
+
+heights = [int(input()) for _ in range(9)]
+
+for c in combinations(heights, 7):
+    if sum(c) < 100: 
+        height = c 
+        print(height)
